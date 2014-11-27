@@ -1,0 +1,9 @@
+<ul>
+{{#each}}
+  <li>{{text}} <br/>
+    {{#each comment in comments}}
+      {{comment.text}} <br/>
+    {{/each}}
+  </li>
+{{/each}}
+</ul>

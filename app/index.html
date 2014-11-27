@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="assets/performance.css">
   </head>
   <body>
+    <script>
+      if (!window.console) {
+        window.console = {
+          log: function() { }
+        };
+      }
+    </script>
+    
     {{content-for 'body'}}
 
     <script src="assets/vendor.js"></script>
