@@ -4,8 +4,8 @@ module.exports = function(app) {
 
   postsRouter.get('/', function(req, res) {
     res.send({
-      posts: fakePosts(10),
-      comments: fakeComments(10)
+      posts: fakePosts(count),
+      comments: fakeComments(count)
     });
   });
   app.use('/api/posts', postsRouter);
@@ -35,3 +35,5 @@ function fakeComments(n) {
 
   return comments;
 }
+
+var count = 70;
