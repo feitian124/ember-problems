@@ -8,6 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.resource('posts', function() { });
   this.resource('comments', function() { });
+  this.route('hamster');
 });
 
 export default Router;
